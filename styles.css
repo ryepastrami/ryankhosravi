@@ -74,6 +74,7 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
   text-transform: uppercase;
 }
 .photo-intro { margin: 0; max-width: 650px; }
+.photo-header .sidequest-meta { margin-top: 16px; }
 .photo-grid {
   counter-reset: photo;
   display: grid;
@@ -151,6 +152,7 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
   margin: 0 0 9px;
   color: var(--muted);
   font-size: 12px;
+  font-variant-numeric: tabular-nums;
   letter-spacing: .08em;
   text-transform: uppercase;
 }
@@ -168,17 +170,20 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
 .project-hero img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #f1eee8; }
 .project-story { margin-top: 104px; }
 .project-chapter {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   align-items: center;
   gap: 70px;
+  padding-top: 38px;
+  border-top: 1px solid #d7d4cd;
   margin: 0 0 112px;
 }
 .project-chapter.reverse { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
 .project-chapter.reverse .project-copy { order: 2; }
 .project-chapter.reverse .project-media { order: 1; }
 .project-copy { max-width: 620px; }
-.project-step { padding-top: 10px; border-top: 1px solid #d7d4cd; }
+.project-step { position: absolute; top: 10px; left: 0; width: 3ch; }
 .project-copy > p:last-child { margin-bottom: 0; }
 .project-chapter.text-only { display: block; }
 .project-chapter.text-only .project-copy { width: min(650px, 100%); max-width: none; margin: 0 auto; }
@@ -189,7 +194,7 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
 .project-media.pair { grid-template-columns: 1fr 1fr; }
 .editorial-project .project-media figure { margin: 0; }
 .project-media img { display: block; width: 100%; height: auto; border: 1px solid #d7d4cd; }
-.project-image-number { display: block; margin-top: 7px; color: var(--muted); font-size: 11px; letter-spacing: .08em; text-align: right; }
+.project-image-number { display: block; width: 3ch; margin-top: 7px; color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; letter-spacing: .08em; text-align: left; }
 
 .writing-list { padding-left: 20px; margin-bottom: 44px; }
 .writing-list li { margin: 9px 0; }

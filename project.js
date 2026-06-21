@@ -74,9 +74,10 @@ if (!project) {
     if (!paragraphs.length && images.length) chapter.classList.add('media-only');
     if (chapterIndex % 2 === 0) chapter.classList.add('reverse');
 
+    chapter.appendChild(element('p', String(chapterIndex).padStart(2, '0'), 'project-step'));
+
     if (paragraphs.length) {
       const copy = element('div', '', 'project-copy');
-      copy.appendChild(element('p', String(chapterIndex).padStart(2, '0'), 'project-step'));
       paragraphs.forEach((text) => copy.appendChild(element('p', text)));
       chapter.appendChild(copy);
     }
