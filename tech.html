@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Selected content design and writing work by Ryan Khosravi." />
+    <title>Ryan Khosravi • Tech</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="tech-main">
+      <nav aria-label="Primary navigation">
+        <a href="index.html">home</a><span>/</span>
+        <a class="active" href="tech.html">tech</a><span>/</span>
+        <a href="writing.html">writing</a><span>/</span>
+        <a href="fun.html">side quests</a>
+      </nav>
+
+      <div class="section-heading">
+        <h1>Tech</h1>
+        <div class="view-toggle" role="group" aria-label="Project layout">
+          <button class="selected" data-view="grid" aria-pressed="true">Grid</button>
+          <button data-view="list" aria-pressed="false">List</button>
+        </div>
+      </div>
+      <p>I help make products sound like they know what they’re doing. That usually means onboarding, documentation, UX copy, content strategy, brand voice, and all the tiny sentences people only notice when they’re confusing.</p>
+
+      <div class="tech-projects grid-view">
+        <a class="tech-project" href="project.html?project=onboarding-flow"><img src="assets/tech-covers/onboarding-flow.avif" alt="Arc onboarding flow" /><strong>Onboarding Flow</strong><span>The Browser Company</span><small>A first-run experience for Arc, because a new browser already asks enough of you.</small></a>
+        <a class="tech-project" href="project.html?project=help-center"><img src="assets/tech-covers/help-center.avif" alt="Notion Help Center" /><strong>Help Center</strong><span>Notion</span><small>Content strategy, information architecture, and support writing—including when AI made the questions weirder.</small></a>
+        <a class="tech-project" href="project.html?project=in-app-education"><img src="assets/tech-covers/in-app-education.avif" alt="Arc in-app education" /><strong>In-App Education</strong><span>The Browser Company</span><small>Product education that shows up before a complex feature starts feeling like homework.</small></a>
+        <a class="tech-project" href="project.html?project=membership-cards"><img src="assets/tech-covers/membership-cards.webp" alt="Arc membership cards" /><strong>Membership Cards</strong><span>The Browser Company</span><small>2,500 whimsical randomized titles for the end of onboarding.</small></a>
+        <a class="tech-project" href="project.html?project=arcinternet-community"><img src="assets/tech-covers/arcinternet-community.avif" alt="ArcInternet community" /><strong>@ArcInternet Community</strong><span>The Browser Company</span><small>A private Twitter community for Arc’s beta users.</small></a>
+        <a class="tech-project" href="project.html?project=bug-reporter"><img src="assets/tech-covers/bug-reporter.webp" alt="Arc bug reporter" /><strong>Bug Reporter</strong><span>The Browser Company</span><small>Confirmation messages that change with the bug, because a typo and a total meltdown deserve different responses.</small></a>
+      </div>
+    </main>
+    <script src="tech.js"></script>
+  </body>
+</html>
