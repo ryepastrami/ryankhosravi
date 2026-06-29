@@ -201,6 +201,7 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
 .writing-list span { color: var(--muted); }
 .writing-list li > span:has(+ span) { display: inline; }
 .subhead-copy { color: var(--muted); font-size: 15px; margin-top: -8px; }
+.substack-embed { display: block; width: min(480px, 100%); margin-top: 52px; border: 1px solid #eee; background: white; }
 
 .case-study h1 { margin-bottom: 42px; }
 .case-study h2 { margin-top: 52px; margin-bottom: 18px; }
